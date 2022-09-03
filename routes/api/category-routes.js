@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const { restart } = require('nodemon');
 const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
