@@ -36,7 +36,7 @@ router.get('/:id', async (req, res) => {
     });
 
     if (!categoryData) {
-      res.status(404).json({ message: "no user found with this ID!" });
+      res.status(404).json({ message: "no category found with this ID!1" });
       return;
     }
 
@@ -68,7 +68,7 @@ router.put('/:id', async (req, res) => {
       },
     }).then((updateCategory) => {
       if (!updateCategory[0]) {
-        res.status(404).json({ message: "no user found with this ID!" });
+        res.status(404).json({ message: "no category found with this ID!2" });
       }
     });
 
