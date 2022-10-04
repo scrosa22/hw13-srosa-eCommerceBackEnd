@@ -23,7 +23,7 @@ router.get("/:id", async (req, res) => {
 
   try {
     const productDataID = await Product.findByPk(req.params.id, {
-      include: [{ model: Category }, { model: Tag }],
+      // include: [{ model: Category }, { model: Tag }],
     });
     if (!productDataID) {
       res.status(404).json({ message: "no product found with this ID!" });
